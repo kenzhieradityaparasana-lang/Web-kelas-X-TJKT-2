@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Resmi Kelas X TKJ 2</title>
+
+<style>
+:root{
+  --primary:#1e3a8a;
+  --secondary:#2563eb;
+  --bg:#f1f5f9;
+  --card:#ffffff;
+  --text:#1e293b;
+}
+
+body.dark{
+  --primary:#0f172a;
+  --secondary:#3b82f6;
+  --bg:#0f172a;
+  --card:#1e293b;
+  --text:#f1f5f9;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background:var(--bg);color:var(--text);transition:0.3s;}
+
+nav{
+  background:var(--primary);
+  color:white;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav button{
+  background:var(--secondary);
+  border:none;
+  padding:6px 12px;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.section{
+  padding:40px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  margin-bottom:30px;
+  overflow-x:auto;
+}
+
+h2{
+  margin-bottom:15px;
+  border-left:6px solid var(--secondary);
+  padding-left:10px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:0.9em;
+}
+
+th,td{
+  border:1px solid #ccc;
+  padding:8px;
+  text-align:center;
+}
+
+th{
+  background:var(--secondary);
+  color:white;
+}
+
+tr:nth-child(even){
+  background:#f2f2f2;
+}
+
+body.dark tr:nth-child(even){
+  background:#334155;
+}
+
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+@media(max-width:768px){
+  table{font-size:0.7em;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h3>X TKJ 2 - SMKN 1 GORONTALO</h3>
+  <button onclick="toggleDark()">Dark Mode</button>
+</nav>
+
+<section class="section">
+
+<!-- Informasi Kelas -->
+<div class="card">
+<h2>Informasi Kelas</h2>
+<p><b>Wali Kelas:</b> Ibu Sofiyanti Abdullah, S.Pd</p>
+<p><b>Jumlah Siswa:</b> 29 Orang (25 Laki-laki, 4 Perempuan)</p>
+<p><b>Visi:</b> Generasi cerdas, kreatif dan berakhlak mulia</p>
+<p><b>Misi:</b> Aktif belajar, disiplin dan saling menghargai</p>
+</div>
+
+<!-- Jadwal Lengkap -->
+<div class="card">
+<h2>Jadwal Pelajaran Lengkap</h2>
+
+<table>
+<tr>
+<th>Jam</th>
+<th>Senin</th>
+<th>Selasa</th>
+<th>Rabu</th>
+<th>Kamis</th>
+<th>Jumat</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Upacara</td>
+<td>Bhs Inggris</td>
+<td>Informatika</td>
+<td>Matematika</td>
+<td>Religi</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Bhs Indonesia</td>
+<td>Bhs Inggris</td>
+<td>Informatika</td>
+<td>Matematika</td>
+<td>Bhs Inggris</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Bhs Indonesia</td>
+<td>DDK</td>
+<td>Informatika</td>
+<td>Matematika</td>
+<td>Bhs Inggris</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Bhs Indonesia</td>
+<td>DDK</td>
+<td>Informatika</td>
+<td>DDK</td>
+<td>PJOK</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Bhs Indonesia</td>
+<td>DDK</td>
+<td>IPAS</td>
+<td>DDK</td>
+<td>PJOK</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Seni Budaya</td>
+<td>DDK</td>
+<td>IPAS</td>
+<td>DDK</td>
+<td>PJOK</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Seni Budaya</td>
+<td>DDK</td>
+<td>IPAS</td>
+<td>DDK</td>
+<td>Sejarah</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>IPAS</td>
+<td>DDK</td>
+<td>Agama</td>
+<td>DDK</td>
+<td>Sejarah</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>IPAS</td>
+<td>Matematika</td>
+<td>Agama</td>
+<td>KKA</td>
+<td>PPKN</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>IPAS</td>
+<td>Matematika</td>
+<td>Agama</td>
+<td>KKA</td>
+<td>PPKN</td>
+</tr>
+
+</table>
+</div>
+
+<!-- Daftar Peserta Didik -->
+<div class="card">
+<h2>Daftar Peserta Didik</h2>
+
+<table>
+<tr>
+<th>No</th>
+<th>Nama Peserta Didik</th>
+</tr>
+
+<tr><td>1</td><td>Hardy Tasyrik Kadir</td></tr>
+<tr><td>2</td><td>Ibrahim Rifadlan Riyadi</td></tr>
+<tr><td>3</td><td>Ishak Adri Yunus</td></tr>
+<tr><td>4</td><td>Jiat Rahmat Mohammad</td></tr>
+<tr><td>5</td><td>La Ode Aditya Putra</td></tr>
+<tr><td>6</td><td>La Ode Bilal Pratama</td></tr>
+<tr><td>7</td><td>Michael Waworuntu</td></tr>
+<tr><td>8</td><td>Moh. Adliarjuna Matoka</td></tr>
+<tr><td>9</td><td>Moh. Xander Pakaya</td></tr>
+<tr><td>10</td><td>Moh Akbar Palilati</td></tr>
+<tr><td>11</td><td>Moh Halid Polimengo</td></tr>
+<tr><td>12</td><td>Moh Reza Ramadhan Daeng Matona</td></tr>
+<tr><td>13</td><td>Moh. Widad Ramadhan Ali</td></tr>
+<tr><td>14</td><td>Mohammad Adit</td></tr>
+<tr><td>15</td><td>Moh. Bintang Lasale</td></tr>
+<tr><td>16</td><td>Moh. Farel Aldiansyah Alun</td></tr>
+<tr><td>17</td><td>Moh. Putra Bonggi</td></tr>
+<tr><td>18</td><td>Moh. Rayapati Pongoliu</td></tr>
+<tr><td>19</td><td>Moh. Reynaldo Mano</td></tr>
+<tr><td>20</td><td>Moh. Fauzi Ramadhan</td></tr>
+<tr><td>21</td><td>Wahyu Reyhan Nento</td></tr>
+<tr><td>22</td><td>Jelita P. Niode</td></tr>
+<tr><td>23</td><td>Nayla Putri Sahi</td></tr>
+<tr><td>24</td><td>Kenzie Radithya Putra Parasana</td></tr>
+<tr><td>25</td><td>Melisa Natasya</td></tr>
+<tr><td>26</td><td>Nurlaeli Hidayatul Ramdani</td></tr>
+<tr><td>27</td><td>Aprilyanto Hilamuhu</td></tr>
+<tr><td>28</td><td>Moh Riski Tahidina</td></tr>
+<tr><td>29</td><td>Rahmad Husain</td></tr>
+
+</table>
+</div>
+
+</section>
+
+<footer>
+© 2026 Website Resmi Kelas X TKJ 2 - SMKN 1 GORONTALO
+</footer>
+
+<script>
+function toggleDark(){
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+  </html>
